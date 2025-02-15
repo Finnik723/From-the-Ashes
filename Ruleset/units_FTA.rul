@@ -1134,7 +1134,7 @@ units:
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
     stats:
-      tu: 70
+      tu: 65
       stamina: 100
       health: 144
       bravery: 110
@@ -1146,7 +1146,7 @@ units:
       psiStrength: 30
       psiSkill: 0
     statsRandom:
-      tu: 3
+      tu: 5
       stamina: 5
       health: 15
       bravery: 10
@@ -1164,8 +1164,7 @@ units:
     aggression: 8
     isLeeroyJenkins: true
     livingWeapon: true
-    
-    #aggroSound: [150, 151, 152, 153, 154]
+    aggroSound: [150, 151, 152, 153, 154]
     deathSound: [155, 156]
     builtInWeaponSets:
       - - STR_ZOMBIE_WEAPON
@@ -1898,6 +1897,105 @@ units:
     treatedByAI: true
     aggression: 8
     canSurrender: false
+
+#Traitors
+  - &TraitorSoldier
+    type: STR_TRAITOR_SOLDIER_MALE
+    race: STR_HUMAN
+    roles: [0]
+    stats:
+      #soldier
+      tu: 70
+      stamina: 65
+      health: 37
+      bravery: 10
+      reactions: 50
+      firing: 60
+      throwing: 55
+      strength: 40
+      melee: 55
+      psiStrength: 45
+      psiSkill: 0
+      mana: 0
+      #pilot
+      #agent
+      stealth: 10
+      perception: 20
+      charisma: 10
+      investigation: 5
+      deception: 10
+      interrogation: 5
+      #scientist
+      #engineer
+      diligence: 10
+    statsRandom:
+      tu: 5
+      stamina: 15
+      health: 5
+      bravery: 0
+      reactions: 10
+      firing: 15
+      throwing: 15
+      strength: 10
+      melee: 15
+      psiStrength: 15
+    armor: STR_TRAITOR_SOLDIER_MALE_ARMOR
+    prisoner: STR_TRAITOR_SOLDIER_MALE
+    standHeight: 22
+    kneelHeight: 14
+    value: 10
+    deathSound: *MaleDeathSounds
+    # panicSound: *MalePanicSounds
+    # berserkSound: *MaleBerserkSounds
+    energyRecovery: 25
+    intelligence: 4
+    aggression: 8
+    canSurrender: true
+  - type: STR_TRAITOR_SOLDIER_FEMALE
+    refNode: *TraitorSoldier
+    armor: STR_TRAITOR_SOLDIER_FEMALE_ARMOR
+    prisoner: STR_TRAITOR_SOLDIER_FEMALE
+    deathSound: *FemaleDeathSounds
+    # panicSound: *FemalePanicSounds
+    # berserkSound: *FemaleBerserkSounds
+
+#Other
+  - type: STR_DRAGONFLY_TURRET
+    race: STR_ROBOT
+    stats:
+      tu: 100
+      stamina: 1
+      health: 90
+      bravery: 110
+      reactions: 120
+      firing: 60
+      throwing: 0
+      strength: 60
+      psiStrength: 100
+      psiSkill: 0
+      melee: 0
+    armor: STR_DRAGONFLY_TURRET_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 0
+    deathSound: 23
+    intelligence: 4
+    aggression: 7
+    sniper: 50
+    spotter: 1
+    moveSound: 14
+    energyRecovery: 1
+    builtInWeaponSets:
+      - - STR_DRAGONFLY_TURRET
+      - - STR_DRAGONFLY_TURRET
+      - - STR_DRAGONFLY_TURRET
+      - - STR_DRAGONFLY_TURRET
+      - - STR_DRAGONFLY_TURRET
+      - - STR_DRAGONFLY_TURRET
+      - - STR_DRAGONFLY_TURRET
+      - - STR_DRAGONFLY_TURRET
+      - - STR_DRAGONFLY_TURRET
+      - - STR_DRAGONFLY_TURRET
 
 #Resistance
   - &STR_RESISTANCE_SCIENTIST

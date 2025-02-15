@@ -47,7 +47,27 @@ missionScripts:
     startDelay: 4320
     randomDelay: 43500
     maxRuns: 1
-    varName: chupaTerror
+    varName: abandonedBase
+
+  - type: earlyMibRetaliation #FIXME - rework with adding more MIB HQ and related features
+    firstMonth: 0
+    executionOdds: 100
+    missionWeights:
+      0:
+        STR_EARLY_MIB_RETALIATION: 100
+    regionWeights:
+      0:
+        STR_EUROPE: 100
+    raceWeights:
+      0:
+        STR_MIB: 100
+    researchTriggers:
+      STR_COVERT_OPERATIONS: true
+    useTable: false
+    startDelay: 0
+    randomDelay: 20160 #14 days
+    maxRuns: 1
+    varName: earlyMibRetaliation
 
 #aliens
   - type: startTrolling
@@ -70,7 +90,7 @@ missionScripts:
         STR_CROP_CIRCLES_INITIAL: 100
     regionWeights:
       0:
-        STR_CROP_CORCLES_INITIAL: 100
+        STR_CROP_CIRCLES_INITIAL: 100
     raceWeights:
       0:
         STR_MIB: 100
@@ -78,13 +98,30 @@ missionScripts:
     startDelay: 4000
     useTable: false
     randomDelay: 5000
+  - type: cattleMutilationInitial
+    missionWeights:
+      0:
+        STR_CATTLE_MUTILATION_EARLY_GAME: 100
+    regionWeights:
+      0:
+        STR_CATTLE_MUTILATION_EARLY_GAME: 100
+    raceWeights:
+      0:
+        STR_MIB: 100
+    lastMonth: 4
+    executionOdds: 90
+    spawnGap: 10
+    randomSpawnGap: 20
+    startDelay: 28800 #20 days with STR_XCOM_SAMPLING is 3 +- 6 days
+    useTable: false
+    randomDelay: 28800 #20 days 
   - type: cropCirclesInitialSecondary
     missionWeights:
       0:
         STR_CROP_CIRCLES_INITIAL: 100
     regionWeights:
       0:
-        STR_CROP_CORCLES_INITIAL: 100
+        STR_CROP_CIRCLES_INITIAL: 100
     raceWeights:
       0:
         STR_MIB: 100
@@ -114,12 +151,38 @@ missionScripts:
     executionOdds: 50
     firstMonth: 2
     useTable: false
-    spawnGap: 30
-    randomSpawnGap: 15
+    spawnGap: 15
+    randomSpawnGap: 20
     startDelay: 4320
     randomDelay: 43500
     avoidRepeats: 1
     varName: cropCircles
+  - &traitors
+    type: traitorsEarly
+    missionWeights:
+      0:
+        STR_TRAITORS: 100
+    regionWeights:
+      0:
+        STR_TRAITORS: 100
+    raceWeights:
+      0:
+        STR_TRAITORS: 100
+    lastMonth: 4
+    executionOdds: 90
+    useTable: false
+    spawnGap: 20
+    randomSpawnGap: 30
+    startDelay: 4320
+    randomDelay: 43500
+  - type: traitorsMid
+    refNode: *traitors
+    executionOdds: 20
+    firstMonth: 4
+    lastMonth: 8
+    spawnGap: 10
+    randomSpawnGap: 10
+
   - type: mibConvoy
     missionWeights:
       0:
@@ -231,7 +294,7 @@ missionScripts:
     allowedProcessor: 1
     missionWeights:
       0:
-        STR_RESISTANCE_HAVEN_DEFENCE: 100
+        STR_RESISTANCE_HAVEN_DEFENSE: 100
     regionWeights:
       0:
         RESISTANCE_FARM_START_ZONE: 100

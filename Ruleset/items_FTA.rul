@@ -2666,6 +2666,7 @@ items:
     costBuy: 40
     costSell: 30
     weight: 1
+    stackSize: 5
     bigSprite: 349
     floorSprite: 349
     handSprite: 464
@@ -2690,6 +2691,7 @@ items:
     size: 0.01
     costSell: 300
     weight: 2
+    stackSize: 5
     bigSprite: 350
     floorSprite: 350
     handSprite: 472
@@ -2747,7 +2749,6 @@ items:
     requiresBuy:
       - STR_RESISTANCE_BASIC_EQUIPMENT
     size: 0.04
-    stackSize: 5
     costBuy: 50
     costSell: 30
     weight: 3
@@ -3373,8 +3374,10 @@ items:
     hitAnimation: 26
     power: 56
     damageAlter:
-      ArmorEffectiveness: 0.75
-      ToArmorPre: 0.02
+      ArmorEffectiveness: 0.78
+      ToArmorPre: 0.03
+      ToTime: 0.2
+      ToTile: 0.8
     damageType: 1
     clipSize: 20
     costThrow:
@@ -3398,8 +3401,10 @@ items:
     hitAnimation: 26
     power: 58
     damageAlter:
-      ArmorEffectiveness: 0.75
-      ToArmorPre: 0.02
+      ArmorEffectiveness: 0.72
+      ToArmorPre: 0.03
+      ToTime: 0.2
+      ToTile: 0.8
     damageType: 1
     clipSize: 20
     costThrow:
@@ -6051,7 +6056,7 @@ items:
       ArmorEffectiveness: 1.4
       ToArmor: 0.2
       ToWound: 2
-    accuracyMelee: 90
+    accuracyMelee: 80
     meleeMultiplier:
       flatHundred: 0.7
       melee: 0.6
@@ -6059,7 +6064,7 @@ items:
       strength: 0.4
       melee: 0.2
     flatRate: true
-    tuMelee: 14
+    tuMelee: 20
     battleType: 3
     fixedWeapon: true
     invWidth: 2
@@ -6084,7 +6089,7 @@ items:
     meleeMultiplier:
       flatHundred: 0.7
       melee: 0.60
-    tuMelee: 18
+    tuMelee: 25
     flatRate: true
     battleType: 3
     fixedWeapon: true
@@ -6340,6 +6345,61 @@ items:
     invHeight: 2
     recover: false
 #other
+  - type: STR_DRAGONFLY_TURRET
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_FIREARMS]
+    requiresBuy:
+      - STR_TROLLIUM
+    size: 0
+    weight: 0
+    landOnly: true
+    bigSprite: 611
+    bulletSprite: 3
+    fireSound: 134
+    hitSound: 13
+    hitAnimation: 26
+    bulletSpeed: 20
+    compatibleAmmo:
+       - STR_DRAGONFLY_TURRET_CLIP
+    accuracyCloseQuarters: 60
+    accuracyAuto: 55
+    tuAuto: 70
+    autoRange: 20
+    autoShots: 10
+    battleType: 1
+    twoHanded: false
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    sprayWaypoints: 2
+    recover: false
+  - type: STR_DRAGONFLY_TURRET_CLIP
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_FIREARMS, STR_CLIPS]
+    requiresBuy:
+      - STR_XCOM_EQUIPMENT_ACQUISITION
+    size: 0.4
+    weight: 25
+    landOnly: true
+    bigSprite: 612
+    floorSprite: 612
+    hitSound: 13
+    hitAnimation: 26
+    power: 58
+    damageAlter:
+      ArmorEffectiveness: 0.78
+      ToArmorPre: 0.03
+      ToTime: 0.2
+      ToTile: 0.8
+    damageType: 1
+    clipSize: 50
+    battleType: 2
+    isCraftTurretAmmo: true
+    armor: 30
+    invWidth: 2
+    invHeight: 2
+    attraction: 15
+    recover: true
+    listOrder: 15030
   - type: STR_FAKE_AGENT_ID
     categories: [STR_CONCEALABLE, STR_DISGUISE]
     landOnly: true
@@ -6642,6 +6702,97 @@ items:
     invHeight: 1
     recoveryPoints: 2
     listOrder: 31100
+  - type: STR_TRAITORS_LOOT_COMMON
+    categories: [STR_LOOT]
+    battleType: 0
+    armor: 5
+    recoveryTransformations:
+      STR_CASH_PACK: [2, 3, 2, 1]
+      STR_CASH_PACK_BIG: [4, 2, 1]
+      STR_BRIEFCASE_CASH: [9, 1]
+      STR_SUPPLIES_1: [2, 2, 1]
+      STR_SEALED_CRATE: [5, 1]
+      STR_TECH_PARTS_PACK: [5, 1]
+      STR_CREDIT_CARD: [6, 1]
+      STR_CREDIT_CARD_SILVER: [8, 1]
+      STR_CREDIT_CARD_GOLD: [20, 1]
+      STR_MONEY_BAG: [30, 1]
+      STR_GOLD_BAR: [25, 1]
+      STR_JEWEL: [25, 1]
+      STR_ANCIENT_ARTIFACT: [1000, 1]
+      STR_DRUGS_PACK: [10, 2, 1, 1, 1, 1]
+      STR_BASEBALL_BAT: [10, 1]
+      STR_POLICE_BATON: [10, 1]
+      STR_COMBAT_KNIFE: [10, 1]
+      STR_MACHETE: [10, 1]
+      STR_THROWING_KNIFE: [10, 1]
+      STR_TASER: [15, 1]
+      STR_TASER_CLIP: [15, 0, 3]
+      STR_PISTOL: [15, 1]
+      STR_PISTOL_CLIP: [15, 0, 4, 3]
+      STR_PISTOL_EXP_CLIP: [15, 0, 4, 3]
+      STR_HEAVY_PISTOL: [15, 1]
+      STR_HEAVY_PISTOL_CLIP: [15, 0, 0, 0, 1]
+      STR_HEAVY_PISTOL_EXP_CLIP: [15, 0, 0, 0, 1]
+      STR_PDW: [20, 1]
+      STR_PDW_CLIP: [20, 0, 0, 0, 1]
+      STR_SMG: [20, 1]
+      STR_SMG_CLIP: [20, 0, 0, 0, 1]
+      STR_ASSAULT_RIFLE: [25, 1]
+      STR_RIFLE: [25, 1]
+      STR_PRECISION_RIFLE: [25, 1]
+      STR_RIFLE_CLIP: [25, 0, 0, 0, 1]
+      STR_RIFLE_EXP_CLIP: [25, 0, 0, 0, 1]
+      STR_SNIPER_RIFLE: [30, 1]
+      STR_SNIPER_RIFLE_CLIP: [30, 1]
+      STR_SHOTGUN: [25, 1]
+      STR_SEMI_AUTO_SHOTGUN: [25, 0, 0, 1]
+      STR_SHOTGUN_SHELLS_BS: [25, 0, 0, 1]
+      STR_SHOTGUN_SHELLS_AP: [25, 0, 0, 1]
+      STR_SHOTGUN_SHELLS_BATON: [25, 0, 0, 1]
+      STR_SHOTGUN_SHELLS_DRAGON: [25, 0, 0, 1]
+      STR_LMG: [35, 1]
+      STR_LMG_CLIP: [35, 0, 1]
+      STR_ASSAULT_CANNON: [40, 1]
+      STR_ASSAULT_CANNON_CLIP_AP: [40, 0, 1]
+      STR_LIGHT_CANNON: [40, 1]
+      STR_LC_AP_AMMO: [40, 1]
+      STR_LC_BS_AMMO: [40, 1]
+      STR_LC_HE_AMMO: [40, 1]
+      STR_LC_I_AMMO: [40, 1]
+      STR_HEAVY_CANNON: [45, 1]
+      STR_HC_AP_AMMO: [45, 1]
+      STR_HC_BS_AMMO: [45, 1]
+      STR_HC_HE_AMMO: [45, 1]
+      STR_HC_I_AMMO: [45, 1]
+      STR_AUTO_CANNON: [45, 1]
+      STR_AC_AP_AMMO: [45, 1]
+      STR_AC_BS_AMMO: [45, 1]
+      STR_AC_HE_AMMO: [45, 1]
+      STR_AC_I_AMMO: [45, 1]
+      STR_MGL: [45, 1]
+      STR_MGL_CLIP: [45, 1]
+      STR_MGL_CLIP_SMOKE: [45, 1]
+      STR_MGL_CLIP_INC: [45, 1]
+      STR_MGL_CLIP_FLASHBANG: [45, 1]
+      STR_ROCKET_LAUNCHER: [50, 1]
+      STR_SMALL_ROCKET: [45, 0, 0, 1]
+      STR_LARGE_ROCKET: [50, 0, 0, 1]
+      STR_INCENDIARY_ROCKET: [50, 0, 0, 1]
+      STR_GRENADE: [25, 0, 0, 0, 0, 0, 1]
+      STR_SMOKE_GRENADE: [25, 0, 0, 0, 0, 0, 1]
+      STR_PROXIMITY_GRENADE: [35, 0, 0, 0, 0, 0, 1]
+      STR_INCENDIARY_GRENADE: [30, 0, 0, 0, 0, 0, 1]
+      STR_FLASHBANG_GRENADE: [25, 0, 0, 0, 0, 0, 1]
+      STR_HIGH_EXPLOSIVE: [50, 1]
+      STR_STIMS_INJECTOR: [30, 0, 0, 1]
+      STR_PERSONAL_AID_KIT: [30, 1]
+      STR_TRAUMA_PACK: [30, 1]
+      STR_ELECTRO_FLARE: [30, 1]
+      STR_DRAGONFLY_TURRET_CLIP: [70, 1]
+      STR_STINGRAY_MISSILE: [100, 0, 0, 0, 1]
+      STR_CANNON_ROUNDS_X50: [80, 0, 0, 0, 0, 0, 1]
+    listOrder: 60020
   - type: STR_TOOTHPASTE_PACKET
     categories: [STR_LOOT]
     size: 3
@@ -7769,6 +7920,11 @@ items:
   - type: STR_MAD_DOGE
     refNode: *liveMonster
     listOrder: 100665
+  - type: STR_TRAITOR_SOLDIER_CORPSE
+    refNode: *HUMAN_CORPSE
+    bigSprite: 149
+    floorSprite: 149
+    listOrder: 100665
 #xcom
   - type: STR_CORPSE_LEATHER_COAT
     categories: [STR_CORPSES]
@@ -7894,6 +8050,12 @@ items:
     armor: 30
     recover: false #fixme - drone repaire transformation?
     listOrder: 4990
+  - type: STR_DRAGONFLY_TURRET_SPAWNER
+    spawnUnit: STR_DRAGONFLY_TURRET
+    spawnUnitFaction: 0
+    invWidth: 0
+    invHeight: 0
+    battleType: 4
 
 # blanks
   - type: INV_NULL_HAND_L
@@ -8037,6 +8199,14 @@ items:
     invHeight: 1
     fixedWeapon: true
     defaultInventorySlot: STR_LEFT_LEG
+    recover: false
+  - type: STR_NO_RECOVER
+    recover: false
+  - type: O_CORPSE
+    floorSprite: 310
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
     recover: false
 
 extended:

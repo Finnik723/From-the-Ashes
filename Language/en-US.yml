@@ -27,7 +27,6 @@ en-US:
   STR_CONTAINMENTLIMITSENFORCED_DESC: "Enforces alien containment limits for live aliens recovered from missions."
   STR_IRONMAN_ALPHA_DESC: "Ironman mode disabled for alpha"
   STR_NOT_ABLE_TO_LAND_HERE: "The craft will not be able to land near mission area"
-  STR_SELL_UC: "SELL"
   STR_EXTENDED_UC: "OVERVIEW"
   STR_EXTENDED_LINKS: "Global Overview"
   STR_LOYALTY_RATING: "Loyalty> {ALT}{0}"
@@ -454,6 +453,7 @@ en-US:
   STR_PILOT_LIST: "Pilot List"
   STR_PILOT_TRAINING: "Pilot Training"
   STR_BUILD_TIME: "Build time>{ALT}{0}"
+  STR_FINISHING: "Finishing..."
   STR_DAYS_LC: "days"
   STR_HOURS_LC: "hours"
   STR_MAN_DAY:
@@ -851,6 +851,7 @@ en-US:
   STR_RESISTANCE_FOREST_HOUSE_AMBUSH: "Resistance Haven Attacked"
   STR_RESISTANCE_FARM_ZOMBIE_AMBUSH: "Resistance Haven Attacked"
   STR_RESISTANCE_HAVEN_AMBUSH_DESCRIPTION: "We are approaching the supposed location of the Resistance shelter. We're still receiving an encrypted distress signal from their radio beacon, but there is no communication with the refuge itself - no one is answering our requests. It is imperative to understand the situation and, if necessary, to eliminate all active threats.{NEWLINE}To abort the mission return X-Com operatives to the transport craft and click on the 'Abort Mission' icon."
+  STR_RESISTANCE_HAVEN_DEFENSE: "Resistance Heaven Defence"
   STR_MIB_FOREST_BEACON_ASSAULT: "Resistance Haven Attacked"
   STR_MIB_FOREST_BEACON_DESCRIPTION: "We are approaching the supposed location of the Resistance shelter. We're still receiving an encrypted distress signal from their radio beacon, but there is no communication with the refuge itself - no one is answering our requests. Obviously, the Resistance shelters must be in a secluded place, but not the middle of nowhere! It is imperative to understand the situation and, if necessary, to eliminate all active threats.{NEWLINE}To abort the mission return X-Com operatives to the transport craft and click on the 'Abort Mission' icon."
   STR_RESISTANCE_URBAN_HIDEOUT: "Resistance Haven Attacked"
@@ -964,6 +965,8 @@ en-US:
   STR_ABANDONED_BASE_ALERT_DESCRIPTION: "According to the decoded Ufopedia data, we were able to locate the abandoned base. The scouts avoided approaching the entrance to the underground structure. According to our scanners, the base is completely blacked out. We have no idea why XCOM abandoned it, and we need to be extremely careful. An assault squad must be dispatched to clear the facility. We may only have one shot at it - intense warfare may draw unwanted attention to the facility from the M.I.B."
   STR_ABANDONED_BASE_BRIEFING: "The assault squad disembarked near the entrance of the abandoned subsurface base. It's obviously been disused for a long time - the entrance is partially blocked with sand, and the hangar hatch is open. There is activity on the lower level of the facility, therefore extreme caution is required. It is necessary to descend underground and clear the area.{NEWLINE}To abort the mission return X-Com operatives to the green area and click on the 'Abort Mission' icon."
   STR_CALL_OF_DUTY_BRIEFING: "We managed to organize a meeting with a former X-COM employee and prepare a cover to return to the base. However, the sudden appearance of M.I.B. agents jeopardized the whole operation. Get the mission objective to the evacuation point in one piece, neutralize the enemies if possible. To successfully complete the mission, place all X-Com operatives to the green area and click on the 'Abort Mission' icon."
+  STR_EARLY_MIB_RETALIATION: "M.I.B. Attacking X-COM base"
+  STR_EARLY_MIB_RETALIATION_BRIEFING: "Several cargo helicopters were able to stealthily approach our base and disembark their troops. The attack was supported by a squad that broke through the security perimeter in vans. Well-armed and trained M.I.B. agents infiltrated the lower levels of the base, leaving us little time to prepare our defenses."
   #traps
   STR_MIB_CHASING: "Chasing M.I.B."
   STR_MIB_CHASING_TRAP: "Chasing M.I.B."
@@ -986,11 +989,17 @@ en-US:
   STR_FOREST_CATTLE_SAMPLING_SITE: "Cattle Sampling Site"
   STR_CROP_CIRCLES_SAMPLING_SITE: "Crop Circle Sampling Site"
   STR_CITY_OFFICE: "City Office"
-  STR_CITY_OFFICE_BRIEFING: We have carefully planned everything - our operatives will enter the office building through the roof, they will get there through a temporary structure built to repair the adjacent building. The server room is somewhere in the building, we need to access the terminal. Caution is required - if our agents are discovered, the security guards will surely call for backup and local police. Try to avoid unnecessary civilian casualties - we have no reason to suspect ordinary employees of aiding and abetting alien agents. Retreat from the area of the operation is supposed to be carried out by the same route, through the roof. To end the mission, place the soldiers on the green tiles and click on the 'Abort Mission' icon."
+  STR_CITY_OFFICE_BRIEFING: "We have carefully planned everything - our operatives will enter the office building through the roof, they will get there through a temporary structure built to repair the adjacent building. The server room is somewhere in the building, we need to access the terminal. Caution is required - if our agents are discovered, the security guards will surely call for backup and local police. Try to avoid unnecessary civilian casualties - we have no reason to suspect ordinary employees of aiding and abetting alien agents. Retreat from the area of the operation is supposed to be carried out by the same route, through the roof. To end the mission, place the soldiers on the green tiles and click on the 'Abort Mission' icon."
   STR_DATA_GATHERED: "DATA GATHERED"
+  STR_TRAITORS_REFUGE: "A Traitors Refuge"
+  STR_TRAITORS_REFUGE_ALERT: "TRAITORS REFUGE LOCATED"
+  STR_TRAITORS_REFUGE_ALERT_DESCRIPTION: "During the first invasion of our base by M.I.B. agents, several cowards from our ranks escaped and fled, taking some of our valuable equipment and gear with them. We managed to discover their location. Perhaps we should pay them a visit?"
+  STR_TRAITORS_REFUGE_BRIEFING: "During the first invasion of our base by M.I.B. agents, several cowards from our ranks escaped and fled, taking some valuable equipment and gear with them. We managed to locate their refuge. Neutralize all the enemies, if possible, without damaging the material valuables in their hideout. To end the mission, place the soldiers on the green tiles and click on the 'Abort Mission' icon."
 #covertOps
   STR_CHASING_MIB: "Chasing M.I.B."
   STR_CHASING_MIB_DESCRIPTION: "We should track down the Men in Black forces that attacked our base. They headed east, and it is unlikely they could get very far in such a transport. The operation objective is to investigate the settlements in the sector, interview the locals and attempt to gain access to the video surveillance systems.  While this is our only lead, we need to learn more about our enemy to anticipate their next move."
+  STR_CHASING_MIB_SUCCESS_DESCRIPTION: "Once the operation is complete, we need to analyze the resulting data."
+  STR_CHASING_MIB_FAILURE_DESCRIPTION: "Once the operation is complete, we need to analyze the resulting data."
   STR_REGIONAL_HQ_AREA_SURVEY: "M.I.B. Area Survey"
   STR_REGIONAL_HQ_AREA_SURVEY_DESCRIPTION: "We are on the trail of the Men in Black. After that incident on the road, there is absolute confidence that we are moving in the right direction. We received a little more information and already know exactly which city we have to go to. This urban area has long been teeming with interference and unknown signals. Most likely, this is where the M.I.B. secret base is located. We need to investigate further."
   STR_REGIONAL_HQ_AREA_SURVEY_RESULTS_DESCRIPTION: "Our agents were able to confirm that the regional headquarters of the Men in Black is somewhere within the city under investigation. Unfortunately, we are unable to pinpoint the exact location of the secret base. A thorough scan of the radio frequencies revealed a channel of multi-stream encrypted data, but we have not succeeded in deciphering it or locating the source of the signal."
@@ -1093,6 +1102,8 @@ en-US:
   STR_NO_SUPPLY_THIRD_WARNING_DESCRIPTION: "Our reserves are long gone, people are starving, and our forces refuse to risk their lives amid the famine. It's time to resolve the crisis, because this is the last warning.{NEWLINE}Loyalty score> {ALT}-900"
   STR_MIB_STORY_MILESTONE_1_EVENT: "Crumb trails"
   STR_MIB_STORY_MILESTONE_1_EVENT_DESCRIPTION: "We've made some progress in studying the Men in Black, but we still don't know their methods of communication and organization of operations. That could be the key to understanding how to deal a devastating blow to their plans. All that remains is to keep looking for clues in the bits of information we can glean from the interrogations of M.I.B. agents."
+  STR_EARLY_MIB_RETALIATION_EVENT: "M.I.B. Attacking our Base"
+  STR_EARLY_MIB_RETALIATION_EVENT_DESCRIPTION: "The remaining M.I.B. agents had loaded into vans and retreated along the road to the east. No doubt they'll return, much better prepared for another attack. We must stop this, and the only way to do this is to try to follow the retreating enemy forces. We have drawn up a plan for a covert operation, and we must commence it as quickly as we can. {NEWLINE}{ALT}New covert operation available."
   STR_MONSTER_HUNT_START_EVENT: "Strange creatures"
   STR_MONSTER_HUNT_START_EVENT_DESCRIPTION: "We constantly receive information about encounters with strange creatures. X-COM has previously investigated such cases, but we have not achieved any meaningful results. It is likely that if we continue our research we will be able to draw a more complete picture of what is happening with these mysterious monsters. However, given our current state of affairs, perhaps it makes sense to focus on the project's survival instead of wasting energy on unconfirmed rumors."
   STR_CONTINUE_INVESTIGATION: "Continue investigation *"
@@ -1187,7 +1198,7 @@ en-US:
   STR_INTEL_NETWORKING_RANDOM_EVENT_6: "Intel Networking"
   STR_INTEL_NETWORKING_RANDOM_EVENT_6_DESCRIPTION: "The amount of data we collect on our main server is growing exponentially, we have experienced a dramatic degradation in performance due to overheating of the hardware. An urgent investment in an integrated server cooling system is necessary, otherwise our entire digital infrastructure is in danger of collapsing.{NEWLINE}Funds>{ALT} -45000"
   STR_INTEL_NETWORKING_RANDOM_EVENT_7: "Intel Networking"
-  STR_INTEL_NETWORKING_RANDOM_EVENT_7_DESCRIPTION: The capacity of our database, which stores raw intelligence information, is almost exhausted. If we want to continue our work, we must invest in additional server hardware, network disks, and routers. In the meantime, our engineers will improve the sharding mechanisms to ensure that data can be accessed quickly by analysts.{NEWLINE}Funds>{ALT} -235000"
+  STR_INTEL_NETWORKING_RANDOM_EVENT_7_DESCRIPTION: "The capacity of our database, which stores raw intelligence information, is almost exhausted. If we want to continue our work, we must invest in additional server hardware, network disks, and routers. In the meantime, our engineers will improve the sharding mechanisms to ensure that data can be accessed quickly by analysts.{NEWLINE}Funds>{ALT} -235000"
   STR_INTEL_NETWORKING_RANDOM_EVENT_8: "Intel Networking"
   STR_INTEL_NETWORKING_RANDOM_EVENT_8_DESCRIPTION: "We have managed to connect to a network of CCTV cameras in a major metropolitan area. The images from the cameras can be fed into our system, but now we will need to focus on a system to recognize faces and objects in the image. If successful, this will be a major aid to intelligence gathering in the area.{NEWLINE}Loyalty score>{ALT} +100"
   STR_INTEL_NETWORKING_RANDOM_EVENT_9: "Intel Networking"
@@ -1315,13 +1326,13 @@ en-US:
   STR_MIB_BANKER_ACCOUNTS3: "M.I.B. Secret Bank Accounts"
   STR_MIB_BANKER_ACCOUNTS3_DESCRIPTION: "The bank owner who covered the M.I.B. headquarters and financed their operations turned out to be a rather weak man. In an attempt to negotiate, he gave us access to some technical accounts. Analyzing the sources of funds flowing into this account allowed us to better understand the pattern in the funding patterns of M.I.B. activity. And of course we were able to discreetly transfer a substantial amount of funds into our accounts.{NEWLINE}Funds income> {ALT}+3 587 823{NEWLINE}Loyalty score> {ALT}+250{NEWLINE}{ALT}The knowledge about M.I.B. has been slightly improved."
   STR_OFFICE_BOSS_EVENT1: "STR_OFFICE_BOSS_EVENT1" #TODO
-  STR_OFFICE_BOSS_EVENT1_DESCRIPTION: "STR_OFFICE_BOSS_EVENT1_DESCRIPTION"
+  STR_OFFICE_BOSS_EVENT1_DESCRIPTION: STR_OFFICE_BOSS_EVENT1_DESCRIPTION
   STR_OFFICE_BOSS_EVENT2: "STR_OFFICE_BOSS_EVENT2" #TODO
-  STR_OFFICE_BOSS_EVENT2_DESCRIPTION: "STR_OFFICE_BOSS_EVENT2_DESCRIPTION"
+  STR_OFFICE_BOSS_EVENT2_DESCRIPTION: STR_OFFICE_BOSS_EVENT2_DESCRIPTION
   STR_OFFICE_BOSS_EVENT3: "STR_OFFICE_BOSS_EVENT3" #TODO
-  STR_OFFICE_BOSS_EVENT3_DESCRIPTION: "STR_OFFICE_BOSS_EVENT3_DESCRIPTION"
+  STR_OFFICE_BOSS_EVENT3_DESCRIPTION: STR_OFFICE_BOSS_EVENT3_DESCRIPTION
   STR_OFFICE_BOSS_EVENT4: "STR_OFFICE_BOSS_EVENT4" #TODO
-  STR_OFFICE_BOSS_EVENT4_DESCRIPTION: STR_OFFICE_BOSS_EVENT4_DESCRIPTION""
+  STR_OFFICE_BOSS_EVENT4_DESCRIPTION: STR_OFFICE_BOSS_EVENT4_DESCRIPTION
   STR_MILITARY_DATA_TERMINAL_EVENT_1: "Results of the military terminal hack"
   STR_MILITARY_DATA_TERMINAL_EVENT_1_DESCRIPTION: "Lore text here pls...{NEWLINE}Funds income> {ALT}+600 000" #TODO
   STR_MILITARY_DATA_TERMINAL_EVENT_2: "Results of the military terminal hack"
@@ -1332,25 +1343,25 @@ en-US:
   STR_MILITARY_DATA_TERMINAL_EVENT_4_DESCRIPTION: "Lore text here pls...{NEWLINE}Funds income> {ALT}+2 100 000" #TODO
 
   STR_MIB_HIDEOUT_TERMINAL_EVENT_1: "Results of the M.I.B. terminal hack"
-  STR_MIB_HIDEOUT_TERMINAL_EVENT_1_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_1_DESCRIPTION: PLACEHOLDER #TODO
   STR_MIB_HIDEOUT_TERMINAL_EVENT_2: "Results of the M.I.B. terminal hack"
-  STR_MIB_HIDEOUT_TERMINAL_EVENT_2_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_2_DESCRIPTION: PLACEHOLDER #TODO
   STR_MIB_HIDEOUT_TERMINAL_EVENT_3: "Results of the M.I.B. terminal hack"
-  STR_MIB_HIDEOUT_TERMINAL_EVENT_3_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_3_DESCRIPTION: PLACEHOLDER #TODO
   STR_MIB_HIDEOUT_TERMINAL_EVENT_4: "Results of the M.I.B. terminal hack"
-  STR_MIB_HIDEOUT_TERMINAL_EVENT_4_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_4_DESCRIPTION: PLACEHOLDER #TODO
   STR_MIB_HIDEOUT_TERMINAL_EVENT_5: "Results of the M.I.B. terminal hack"
-  STR_MIB_HIDEOUT_TERMINAL_EVENT_5_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_5_DESCRIPTION: PLACEHOLDER #TODO
   STR_MIB_HIDEOUT_TERMINAL_EVENT_6: "Results of the M.I.B. terminal hack"
-  STR_MIB_HIDEOUT_TERMINAL_EVENT_6_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_6_DESCRIPTION: PLACEHOLDER #TODO
   STR_MIB_HIDEOUT_TERMINAL_EVENT_7: "Results of the M.I.B. terminal hack"
-  STR_MIB_HIDEOUT_TERMINAL_EVENT_7_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_7_DESCRIPTION: PLACEHOLDER #TODO
   STR_MIB_HIDEOUT_TERMINAL_EVENT_8: "Results of the M.I.B. terminal hack"
-  STR_MIB_HIDEOUT_TERMINAL_EVENT_8_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_8_DESCRIPTION: PLACEHOLDER #TODO
   STR_MIB_HIDEOUT_TERMINAL_EVENT_9: "Results of the M.I.B. terminal hack"
-  STR_MIB_HIDEOUT_TERMINAL_EVENT_9_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_9_DESCRIPTION: PLACEHOLDER #TODO
   STR_MIB_HIDEOUT_TERMINAL_EVENT_10: "Results of the M.I.B. terminal hack"
-  STR_MIB_HIDEOUT_TERMINAL_EVENT_10_DESCRIPTION: #TODO
+  STR_MIB_HIDEOUT_TERMINAL_EVENT_10_DESCRIPTION: PLACEHOLDER #TODO
 
   STR_MIB_CORP_CIVILIAN_TERMINAL_EVENT_1: "Results of the terminal hack"
   STR_MIB_CORP_CIVILIAN_TERMINAL_EVENT_1_DESCRIPTION: "By hacking into the terminal of the financial organization that covered M.I.B.'s activities, we learned that it was also involved in financing their clandestine operations. The data we obtained allowed us to access the funds from the secret accounts and through a complex chain to safely transfer the funds to the accounts under our control.{NEWLINE}Funds income> {ALT}+480 000"
@@ -1693,17 +1704,23 @@ en-US:
   STR_MALE_MILITIA_CITIZEN: "Citizen"
   STR_MALE_CITIZEN_ARMOR: "Citizen"
   STR_MALE_CITIZEN_CORPSE: "Citizen Corpse"
-
   STR_DOGE: "Dog"
   STR_DOGE_ARMOR: "Dog"
   STR_DOGE_CORPSE: "Dog Corpse"
   STR_MAD_DOGE: "Mad Dog"
   STR_MAD_DOGE_UFOPEDIA: "The unfortunate animal is terribly frightened, which has a strong effect on its mind. It is obviously a domestic dog, but in spite of this, it does not stop pouncing on humans, hardly eats or sleeps, and does not stop barking. We ran all the tests, but found no signs of diseases like rabies. We are most likely seeing the result of alien psionic exposure to the dogs, but we haven't documented anything like that before."
   STR_CIVILLIAN: "Civillian"
-  STR_CIVILLIAN_LORE1: "Civillian Lore Name Placeholder"
-  STR_CIVILLIAN_LORE1_UFOPEDIA: "Civillian Lore Placeholder"
-  STR_CIVILLIAN_LORE2: "Civillian Lore Name Placeholder"
-  STR_CIVILLIAN_LORE2_UFOPEDIA: "Civillian Lore Placeholder"
+  STR_CIVILLIAN_LORE1: "Civillian Lore Name Placeholder" #TODO
+  STR_CIVILLIAN_LORE1_UFOPEDIA: "Civillian Lore Placeholder" #TODO
+  STR_CIVILLIAN_LORE2: "Civillian Lore Name Placeholder" #TODO
+  STR_CIVILLIAN_LORE2_UFOPEDIA: "Civillian Lore Placeholder" #TODO
+  STR_TRAITORS: "Traitors"
+  STR_TRAITORS_UFOPEDIA: "After escaping from the XCOM base during a battle with the M.I.B., a group of renegades split up, losing contact with the rest of the party. With no clear plan of what to do next, dodging M.I.B. agents, they set up a hideout and began organizing looting raids on civilians living nearby.{NEWLINE}It is unclear whether we can trust those who once turned their backs on us, but with the right approach we can easily recruit captured traitors back into our ranks."
+  STR_TRAITOR_SOLDIER_CORPSE: "Traitor Corpse"
+  STR_TRAITOR_SOLDIER_MALE: "Traitor"
+  STR_TRAITOR_SOLDIER_MALE_ARMOR: "Traitor"
+  STR_TRAITOR_SOLDIER_FEMALE: "Traitor"
+  STR_TRAITOR_SOLDIER_FEMALE_ARMOR: "Traitor"
 #heroes
   STR_HERO_NAME_MARIA_PEREZ: "Maria Perez"
   STR_HERO_NAME_JACK_NIGHT: "Jack Night"
@@ -2077,7 +2094,7 @@ en-US:
   STR_DRONE_UPGRADES_UFOPEDIA: "The capabilities of the drone's on-board computer can be extended relatively easily with add-on modules optimized for the special tasks that the drone may be assigned. The hardware and accessories are manufactured by engineers, then mounting and installation of the new software is required."
   STR_DRONE_HACKING: "Drone Hacking"
   STR_DRONE_HACKING_UFOPEDIA: "Our drones can be used as proxy devices to remotely hack into secure, isolated enemy digital networks. Although the drone's chassis was not originally designed for such tasks, with additional hardware and installation of the necessary software in the onboard computer, a reasonable degree of efficiency can be achieved. Such a solution will help lessen the risk of experienced hackers in a combat encounter with the enemy."
-  STR_DRONE_SAMPLING: "Drona Sampling"
+  STR_DRONE_SAMPLING: "Drone Sampling"
   STR_DRONE_SAMPLING_UFOPEDIA: "Collecting samples of alien activity during a engagement could be very dangerous for our scientists, and training our soldiers in the right skills would be extremely time-consuming. Instead, we could send a drone to the site, controlled by our scientist from the base. Unfortunately, sample collection is a very complex process, and it's extremely difficult to be robotized effectively. We have developed a special module for the drone, as well as new firmware to help us use it effectively. Despite all our efforts, the process of remote sample collection remains less convenient due to possible delays in the signal sent, as well as the limitations of robotic arms."
   STR_DRONE_COMBAT_CHIP: "Drone Combat Chip"
   STR_DRONE_AGILITY_CHIP: "Drone Agility Chip"
@@ -2189,13 +2206,16 @@ en-US:
   STR_DRONE_SCOUT_ARMOR: "CRAWLER CHASSIS"
   STR_DRONE_SCOUT_CORPSE: "Drone Wreck"
   STR_DRONE_SCOUT_UFOPEDIA: "This small rugged drone is designed for scout and reconnaissance. Although lacking in offensive weaponry or heavy armor, it is fast and allows ground units to quickly scout out enemy positions and act as a spotter without risk to X-Com personnel."
+  STR_DRAGONFLY_TURRET: "Dragonfly Turret"
+  STR_DRAGONFLY_TURRET_ARMOR: "DRAGONFLY TURRET"
+  STR_DRAGONFLY_TURRET_CLIP: "Dragonfly Turret Ammo"
   STR_RECRUITED_MALE: "Recruit"
   STR_RECRUITED_FEMALE: "Recruit"
 #crafts
   STR_LIGHT_MISSILES: "Light Missiles"
   STR_STINGRAY_MISSILE: "Stingray Missle"
   STR_DRAGONFLY: "DRAGONFLY"
-  STR_DRAGONFLY_UFOPEDIA: "This ultramodern aircraft is used by elite Special Forces units and is highly valued by the military for its vertical takeoff capability, high range and speed, as well as its decent cargo compartment capacity."
+  STR_DRAGONFLY_UFOPEDIA: "This ultramodern aircraft is used by elite Special Forces units and is highly valued by the military for its vertical takeoff capability, high range and speed, as well as its decent cargo compartment capacity. After landing, a turret with a twin automatic cannon is deployed in the front of the craft to provide fire support for the troops. The turret is controlled from the cockpit."
   STR_STALKER: "STALKER"
   STR_STALKER_UFOPEDIA: "Lightweight and maneuverable, this jet fighter is in service in many armies. The Stalker is capable of carrying light air-to-air missiles and can be equipped with rapid-fire aircraft cannons for up-close engagements. Its impressive firepower is supplemented by decent armor and advanced electronics."
   STR_HELICOPTER: "HELICOPTER"
@@ -2234,7 +2254,7 @@ en-US:
   STR_XCOM_FUNDAMENTAL_STUDIES_DESCRIPTION: "Having decrypted Ufopedia, we now have access to our fundamental research. Alas, due to lack of funding, most of it was conducted (or at least leaded) by Dr. Meyer personally, and we will need some time to analyze his notes. Perhaps we should devote resources to this.{NEWLINE}{ALT}New research project available."
   STR_XCOM_FUNDAMENTAL_STUDIES_UFOPEDIA: "We were unable to obtain any valuable and reliable information about the aliens, their nature, or to collect samples of their technology. Therefore, XCOM scientists were focused on theoretical solutions to complex problems in a variety of fields, from the natural sciences to military tactics. However, due to a dramatic decrease in funding and drastic staff reductions, all projects were eventually frozen. Now we have an opportunity to carry out some studies, but given the limited capacity, it is important to properly prioritize our efforts."
   STR_XCOM_SAMPLING: "Sample Сollection"
-  STR_XCOM_SAMPLING_DESCRIPTION: "Usually, we are not able to get any traces of alien presence at suspected landing sites of their vessels. It is likely that the M.I.B. agents who arrive at the location promptly clean up the area to prevent any information leakage. Thus, we are probably losing important, if not key, information about our enemy. Perhaps a sample collection kit should be developed that can be used when our soldiers are directly on the ground."
+  STR_XCOM_SAMPLING_DESCRIPTION: "Usually, we are not able to get any traces of alien presence at suspected landing sites of their vessels. It is likely that the M.I.B. agents who arrive at the location promptly clean up the area to prevent any information leakage. Thus, we are probably losing important, if not key, information about our enemy. Perhaps a sample collection kit should be developed that can be used when our scientists are directly on the ground.{NEWLINE}{ALT}New research project available."
   STR_ADVANCED_WARFARE: "Advanced Warfare"
   STR_ADVANCED_WARFARE_UFOPEDIA: "The new reality that came after the official shutdown of the project dictates new tactics on the battlescape. The value of a well-trained soldier is tremendously increasing for us. The requirements for stealthy operations, the adoption of the Hit-and-Run behavior, impose severe limitations on the size of the squads we can deploy on missions. Under these conditions, we need to intensify the development and application of the most advanced technologies and methods of training soldiers to maximize the combat potential and versatility of a small unit of our fighters."
   STR_SOLDIER_SPECS: "Soldier Specializations"
@@ -2299,7 +2319,7 @@ en-US:
   STR_CARBON_SUPERCONDUCTOR: "Carbon Superconductors"
   STR_CARBON_SUPERCONDUCTOR_UFOPEDIA: "Graphene is a material consisting of a single layer of carbon atoms arranged in a lattice of hexagons. It has unique electronic properties such as high electron mobility and high conductivity. In the layered structure of graphene, superconductivity is only observed at temperatures near absolute zero. However, most of the physical properties of graphene depend on the nanostructure of its molecules, so a number of special studies have been conducted to analyze the relationship of different structures of graphene, as well as experiments to add impurities of other elements to the crystal structure. When ligating 3 atoms of cesium on the fuhlerene molecule allows achieving the effect of superconductivity at a temperature of -233 C and at a pressure of 100 Pa. With increasing pressure, the critical temperature rises, but the dependence has a nonlinear character. Alas, but even at a pressure of several gigapascals, the substance acquires superconductivity at temperatures below -180 C."
   STR_HYDRID_SUPERCONDUCTOR: "Hydride Alloys Superconductors"
-  STR_HYDRID_SUPERCONDUCTOR_UFOPEDIA: Thanks to predictions from sophisticated computer modeling, superconductivity has been found in a spectrum of complex hydrides - compounds of metals with numerous hydrogen atoms. Thus, lanthanum hydride exhibits superconductor properties at -46 C, yttrium hydride at -30 C. Alas, the superconductivity of these substances comes only at a pressure of more than 200 GPa (several million atmosphere pressure), which makes the results of these studies interesting from the point of view of theory, but absolutely useless from the point of view of practice. Experiments with heavy isotopes of hydrogen also at the beginning seemed promising, but in the end even the use of precious tritium in hydride alloy does not allow achieving confident superconductivity at pressures below 100 GPa. Such pressure is impossible to obtain outside of special diamond presses, so there are no prospects for creating portable devices with superconductors based on hydride alloys."
+  STR_HYDRID_SUPERCONDUCTOR_UFOPEDIA: "Thanks to predictions from sophisticated computer modeling, superconductivity has been found in a spectrum of complex hydrides - compounds of metals with numerous hydrogen atoms. Thus, lanthanum hydride exhibits superconductor properties at -46 C, yttrium hydride at -30 C. Alas, the superconductivity of these substances comes only at a pressure of more than 200 GPa (several million atmosphere pressure), which makes the results of these studies interesting from the point of view of theory, but absolutely useless from the point of view of practice. Experiments with heavy isotopes of hydrogen also at the beginning seemed promising, but in the end even the use of precious tritium in hydride alloy does not allow achieving confident superconductivity at pressures below 100 GPa. Such pressure is impossible to obtain outside of special diamond presses, so there are no prospects for creating portable devices with superconductors based on hydride alloys."
   STR_SUPERCONDUCTOR_QUANTUM_MODEL: "Quantum Theory of High-temperature Superconductivity."
   STR_SUPERCONDUCTOR_QUANTUM_MODEL_UFOPEDIA: "The key to finding a high-temperature superconductor lies in understanding the mechanism of superconductivity origin at the quantum level. Unfortunately, none of the traditional techniques of condensed matter physics have ever been designed to solve a problem like this. The new mathematical model is based on the understanding of the quantum fluctuation mechanism, which leads to the bundling of electrons into a quasi-mechanical structure and begins to manifest its properties at the macro-level. Such a connected chain of electrons has zero momentum, and energy is transferred due to phonon oscillations. Thermal fluctuations of the conductor molecules above a certain value disrupt this structure, so the properties of the superconductor disappear at high temperatures and low pressure."
   STR_SUPERCONDUCTOR: "Palladium  Superconductor"
@@ -2994,7 +3014,6 @@ en-US:
   RESISTANCE_SCIENTIST: RESISTANCE_SCIENTIST
   DESERT_TELESCOPE: DESERT_TELESCOPE
   STR_CHUPA_TERROR: STR_CHUPA_TERROR
-  STR_CROP_CORCLES_INITIAL: STR_CROP_CORCLES_INITIAL
   STR_DESERT_MILITARY_CONVOY: STR_DESERT_MILITARY_CONVOY
   STR_MIB_HIDEOUT: STR_MIB_HIDEOUT
   STR_MIB_CONVOY: STR_MIB_CONVOY
@@ -3038,6 +3057,7 @@ en-US:
   STR_MEDIUM_GROUND_CONVOY: STR_MEDIUM_GROUND_CONVOY
   STR_SAMPLING_PREREQ: STR_SAMPLING_PREREQ
   STR_MIB_HIDEOUT_OPERATION_PREREQ: STR_MIB_HIDEOUT_OPERATION_PREREQ
+  STR_TRAITORS_LOOT_COMMON: STR_TRAITORS_LOOT_COMMON
   STR_MIB_CRATE_CASH_SMALL: STR_MIB_CRATE_CASH_SMALL
   STR_MIB_CRATE_CASH_BIG: STR_MIB_CRATE_CASH_BIG
   STR_MIB_CRATE_EQUIPMENT: STR_MIB_CRATE_EQUIPMENT
@@ -3089,7 +3109,7 @@ en-US:
   STR_CROP_CIRCLES_ZOMBIES_PREREQ: STR_CROP_CIRCLES_ZOMBIES_PREREQ
   STR_ZOMBIE_PARASITE_PREREQ: STR_ZOMBIE_PARASITE_PREREQ
   STR_EARLY_GAME_TROLLING: STR_EARLY_GAME_TROLLING
-  STR_RESISTANCE_HAVEN_DEFENCE: "Resistance Heaven Defence"
+  STR_CATTLE_MUTILATION_EARLY_GAME: STR_CATTLE_MUTILATION_EARLY_GAME
   STR_DESERT_TELESCOPE_MISSION: STR_DESERT_TELESCOPE_MISSION
   STR_CHUPA_TERROR_MISSION: STR_CHUPA_TERROR_MISSION
   STR_ARMADILLO_TERROR_MISSION: STR_ARMADILLO_TERROR_MISSION
@@ -3132,3 +3152,5 @@ en-US:
   INV_NULL_1X1_LEFT_SHOULDER: INV_NULL_1X1_LEFT_SHOULDER
   INV_NULL_1X1_RIGHT_LEG: INV_NULL_1X1_RIGHT_LEG
   INV_NULL_1X1_LEFT_LEG: INV_NULL_1X1_LEFT_LEG
+  STR_NO_RECOVER: STR_NO_RECOVER
+  O_CORPSE: O_CORPSE

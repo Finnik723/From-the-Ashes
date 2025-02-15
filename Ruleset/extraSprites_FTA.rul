@@ -224,6 +224,7 @@ extraSprites:
       146: Resources/Armors/Xcom/Situational/MilitaryOfficerSuit/bigob_ALLY_MILITARY_OFFICER.png
       147: Resources/Armors/Xcom/Robots/SupportDrones/DroneScout/bigob_DroneScout_Corpse.png
       148: Resources/Armors/Xcom/Robots/SupportDrones/AlloyDroneScout/BigOb_AlloyDroneScout_Corpse.png
+      149: Resources/Armors/Enemies/Special/bigob_XCOM_TRAITOR.png
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/bigob_FlashbangGrenade.png
       301: Resources/Weapons/Earthbound/Xcom/bigob_Pistol_AA_Clip.png
@@ -452,6 +453,8 @@ extraSprites:
       608: Resources/Weapons/Earthbound/Utilities/bigob_AdvancedScanner.png
       609: Resources/MiscItems/bigob_PartsPack.png
       610: Resources/MiscItems/bigob_cash_pack_big.png
+      611: Resources/MiscItems/bigob_Dragonfly_Turret.png
+      612: Resources/MiscItems/bigob_Dragonfly_Turret_Clip.png
 
   - type: FLOOROB.PCK
     files:
@@ -506,6 +509,7 @@ extraSprites:
       146: Resources/Armors/Xcom/Situational/MilitaryOfficerSuit/floorob_ALLY_MILITARY_OFFICER.png
       147: Resources/Armors/Xcom/Robots/SupportDrones/DroneScout/floorob_DroneScout_Corpse.png
       148: Resources/Armors/Xcom/Robots/SupportDrones/AlloyDroneScout/FloorOb_AlloyDroneScout_Corpse.png
+      149: Resources/Armors/Enemies/Special/floorob_XCOM_TRAITOR.png
 
     #300 - weapons
       300: Resources/Weapons/Earthbound/Grenades/floorob_FlashbangGrenade.png
@@ -516,6 +520,7 @@ extraSprites:
       305: Resources/Weapons/Earthbound/Xcom/floorob_LightCannonClipBS.png
       306: Resources/Weapons/Earthbound/Xcom/floorob_LightCannonClipHE.png
       309: Resources/Weapons/Earthbound/Xcom/floorob_LightCannonClipIN.png
+      310: Resources/MiscItems/floorob_null.png
       #310-315
       316: Resources/Weapons/Earthbound/General/floorob_CombatKnife.png
       317: Resources/Weapons/Earthbound/General/floorob_SingleRocket.png
@@ -675,6 +680,7 @@ extraSprites:
       501: Resources/MiscItems/floorob_Drugs.png
       607: Resources/MiscItems/floorob_Gold_bar.png
       609: Resources/MiscItems/floorob_Parts_pack.png
+      612: Resources/MiscItems/floorob_Dragonfly_Turret_Clip.png
 
   - type: HANDOB.PCK #Index step 8
     height: 40
@@ -1648,6 +1654,26 @@ extraSprites:
       0: Resources/Armors/Civilians/Animals/DOGE.png
   - typeSingle: inventory_DOGE
     fileSingle: Resources/Armors/Civilians/Animals/inventory_DOGE.png
+
+  - type: TRAITOR_SOLDIER_MALE.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/Special/XCOM_TRAITOR_MALE.png
+  - typeSingle: inventory_TRAITOR_SOLDIER_MALE
+    fileSingle: Resources/Armors/Enemies/Special/inventory_XCOM_TRAITOR_MALE.png
+  - type: TRAITOR_SOLDIER_FEMALE.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors/Enemies/Special/XCOM_TRAITOR_FEMALE.png
+  - typeSingle: inventory_TRAITOR_SOLDIER_FEMALE
+    fileSingle: Resources/Armors/Enemies/Special/inventory_XCOM_TRAITOR_FEMALE.png
+
 #xcom armors
   - type: XCOM_0.PCK
     width: 512
@@ -1728,6 +1754,14 @@ extraSprites:
       0: Resources/Armors/Xcom/Robots/SupportDrones/AlloyDroneScout/SpriteSheet_AlloyDroneScout.png
   - typeSingle: inventory_DRONE_SCOUT
     fileSingle: Resources/UI/Blanks/Null_Void_transparent_3x3.png
+
+  - type: DRAGONFLY_TURRET.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 320
+    files:
+      0: Resources/Armors/Xcom/Robots/DragonflyTurret/armor.png
 
 ### PAPERDOLL LAYERS ###
 # Human nude

@@ -52,6 +52,8 @@ research:
     hidden: true
   - name: STR_RESISTANCE_CONTACT
     hidden: true
+  - name: STR_CHASING_MIB_PREREQ
+    hidden: true
   - name: STR_REGIONAL_HQ_FOUND
     hidden: true
   - name: STR_PRISONER_INTERROGATIONS
@@ -1059,7 +1061,7 @@ research:
       computers: 80
     points: 50
     dependencies:
-      - STR_HIGH_TECH_PARTS
+      - STR_HIGH_TECH_MANUFACTURING_POSTREQ
     listOrder: 25002
   - name: STR_SAMPLING_TOOL
     cost: 350
@@ -2137,6 +2139,8 @@ research:
   - name: STR_CIVILLIAN_LORE1
     hidden: true
   - name: STR_CIVILLIAN_LORE2
+    hidden: true
+  - name: STR_TRAITORS
     hidden: true
 
 #Cultists

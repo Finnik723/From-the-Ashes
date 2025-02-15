@@ -1342,12 +1342,10 @@ extended:
           shieldRuleset.hasCategory catCheck "STR_SHIELDS";
 
           if eq catCheck 0;
-            debug_log "We don't have arm shield in left hand";
             unit.getRightHandWeapon shieldItem;
             shieldItem.getRuleItem shieldRuleset;
             shieldRuleset.hasCategory catCheck "STR_SHIELDS";
             if eq catCheck 0;
-              debug_log "We don't have arm shield in right hand";
               return power part side;
             end;
           end;

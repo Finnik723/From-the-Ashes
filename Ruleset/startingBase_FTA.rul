@@ -1,10 +1,10 @@
 startingBase:
   randomSoldiers:
-    STR_SOLDIER: 12
-    STR_PILOT: 4
-    STR_SCIENTIST: 5
-    STR_ENGINEER: 4
-    STR_AGENT: 3
+    STR_SOLDIER: 12 #should be 10 on SH
+    STR_PILOT: 4 #should be 3 on SH
+    STR_SCIENTIST: 6 #should be 5 on SH
+    STR_ENGINEER: 5 #should be 4 on SH
+    STR_AGENT: 4 #should be 3 on SH
   scientists: 0
   engineers: 0
   facilities:
@@ -89,6 +89,7 @@ startingBase:
     STR_COMBAT_SHIELD: 6
     STR_STINGRAY_MISSILE: 17
     STR_CANNON_ROUNDS_X50: 8
+    STR_DRAGONFLY_TURRET_CLIP: 5
     STR_ELECTRO_FLARE: 16
     STR_FLASHLIGHT: 8
     STR_METAL_SCRAPS: 30

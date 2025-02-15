@@ -117,6 +117,34 @@ ufos:
         - name: ABDUCT09
           width: 20
           length: 20
+
+#virtual ufos
+  - type: STR_EARLY_MIB_RETALIATION
+    size: STR_SMALL
+    sprite: 1
+    damageMax: 200
+    speedMax: 2400
+    power: 20
+    range: 15
+    score: 75
+    reload: 56
+    breakOffTime: 250
+    raceBonus:
+        STR_MIB:
+          hitBonus: 20
+          craftCustomDeploy: STR_EARLY_MIB_RETALIATION
+          missionCustomDeploy: STR_EARLY_MIB_RETALIATION
+    battlescapeTerrainData:
+      name: UFO_110
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_BITS
+      mapBlocks:
+        - name: UFO_110
+          width: 10
+          length: 10
 #points of interest
   - type: STR_RESISTANCE_SHELTER_FARM
     size: STR_MEDIUM_UC
@@ -1248,7 +1276,7 @@ ufos:
           randomizedItems:
               - position: [9, 9, 0]
                 amount: 1
-                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+                itemList: &alienCropCirclesArtifacts [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
           fuseTimers:
             STR_ALIEN_ARTIFACT_PROXY: [0, 0]
         - name: CROPCIRCLE01
@@ -1257,7 +1285,7 @@ ufos:
           randomizedItems:
               - position: [4, 6, 0]
                 amount: 1
-                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+                itemList: *alienCropCirclesArtifacts
           fuseTimers:
             STR_ALIEN_ARTIFACT_PROXY: [0, 0]
         - name: CROPCIRCLE02
@@ -1266,7 +1294,7 @@ ufos:
           randomizedItems:
               - position: [8, 12, 0]
                 amount: 1
-                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+                itemList: *alienCropCirclesArtifacts
           fuseTimers:
             STR_ALIEN_ARTIFACT_PROXY: [0, 0]
         - name: CROPCIRCLE03
@@ -1275,7 +1303,7 @@ ufos:
           randomizedItems:
               - position: [11, 8, 0]
                 amount: 1
-                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+                itemList: *alienCropCirclesArtifacts
           fuseTimers:
             STR_ALIEN_ARTIFACT_PROXY: [0, 0]
   - type: STR_CROP_CIRCLE_SAMPLING
@@ -1342,7 +1370,7 @@ ufos:
           randomizedItems:
               - position: [9, 9, 0]
                 amount: 1
-                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+                itemList: *alienCropCirclesArtifacts
           fuseTimers:
             STR_ALIEN_ARTIFACT_PROXY: [0, 0]
           objects:
@@ -1354,7 +1382,7 @@ ufos:
           randomizedItems:
               - position: [4, 6, 0]
                 amount: 1
-                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+                itemList: *alienCropCirclesArtifacts
           fuseTimers:
             STR_ALIEN_ARTIFACT_PROXY: [0, 0]
           objects:
@@ -1366,7 +1394,7 @@ ufos:
           randomizedItems:
               - position: [8, 12, 0]
                 amount: 1
-                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+                itemList: *alienCropCirclesArtifacts
           fuseTimers:
             STR_ALIEN_ARTIFACT_PROXY: [0, 0]
           objects:
@@ -1378,7 +1406,7 @@ ufos:
           randomizedItems:
               - position: [11, 8, 0]
                 amount: 1
-                itemList: [STR_ALIEN_ARTIFACT_OPENER, STR_ALIEN_ARTIFACT_SNAKE_EYE, STR_ALIEN_ARTIFACT_DUMMY, STR_ALIEN_ARTIFACT_PROXY]
+                itemList: *alienCropCirclesArtifacts
           fuseTimers:
             STR_ALIEN_ARTIFACT_PROXY: [0, 0]
           objects:
@@ -1865,6 +1893,88 @@ ufos:
               - position: [38, 17, 0]
                 amount: 1
                 itemList: *MIBConvoyItem
+  - type: STR_TRAITORS_REFUGE
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_TRAITORS_REFUGE
+      mapDataSets:
+        - BLANKS
+        - FTA_HIDEOUT_EXT
+        - FTA_HIDEOUT
+      mapBlocks:
+        - name: TRAITOR_HIDE_01
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [6, 16, 0]
+                amount: 1
+                itemList: [STR_TRAITORS_LOOT_COMMON]
+              - position: [8, 15, 0]
+                amount: 1
+                itemList: [STR_TRAITORS_LOOT_COMMON]
+        - name: TRAITOR_HIDE_02
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [5, 15, 0]
+                amount: 1
+                itemList: [STR_TRAITORS_LOOT_COMMON]
+              - position: [9, 10, 0]
+                amount: 1
+                itemList: [STR_TRAITORS_LOOT_COMMON]
+        - name: TRAITOR_HIDE_03
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [9, 15, 0]
+                amount: 1
+                itemList: [STR_TRAITORS_LOOT_COMMON]
+              - position: [11, 4, 0]
+                amount: 1
+                itemList: [STR_TRAITORS_LOOT_COMMON]
+              - position: [5, 4, 0]
+                amount: 1
+                itemList: [STR_TRAITORS_LOOT_COMMON]
+        - name: TRAITOR_HIDE_04
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [5, 15, 0]
+                amount: 1
+                itemList: [STR_TRAITORS_LOOT_COMMON]
+              - position: [4, 11, 1]
+                amount: 1
+                itemList: [STR_TRAITORS_LOOT_COMMON]
+        - name: TRAITOR_HIDE_05
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [6, 15, 0]
+                amount: 1
+                itemList: [STR_TRAITORS_LOOT_COMMON]
+              - position: [1, 15, 0]
+                amount: 1
+                itemList: [STR_TRAITORS_LOOT_COMMON]
+        - name: TRAITOR_HIDE_06
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [6, 3, 0]
+                amount: 1
+                itemList: [STR_TRAITORS_LOOT_COMMON]
+              - position: [14, 4, 0]
+                amount: 1
+                itemList: [STR_TRAITORS_LOOT_COMMON]
+
 
 extended:
   tags: # Remember to add tag definitions to same file as item/armor rulesets!

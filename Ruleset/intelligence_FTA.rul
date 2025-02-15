@@ -22,8 +22,8 @@ intelligence:
 
   - name: STR_INTEL_NETWORKING
     description: STR_INTEL_NETWORKING_DESCRIPTION
-    cost: 400
-    costIncrease: 1
+    cost: 50
+    costIncrease: 5
     requiredResearch: STR_INTELLIGENCE
     specialRule: 2 #INTEL_COVERT_OPERATIONS
     stats:
@@ -48,8 +48,8 @@ intelligence:
 
   - name: STR_MIB_ACTIVITY
     description: STR_MIB_ACTIVITY_DESCRIPTION
-    cost: 400
-    costIncrease: 1
+    cost: 120
+    costIncrease: 5
     requiredResearch: STR_INTELLIGENCE
     specialRule: 0 #only stages
     stats:
@@ -59,7 +59,7 @@ intelligence:
     listOrder: 300
     stages: #TODO add informator mission
       - stageName: mibClue
-        odds: 30
+        odds: 80
         requireRolls: 1
         disabledByResearch: STR_MIB_CLUE_EVENT_5
         eventScripts: [mibClue]

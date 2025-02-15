@@ -38,6 +38,12 @@ events:
     timer: 2880
     timerRandom: 2880
     researchList: [STR_MIB_STORY_MILESTONE_1]
+  - name: STR_EARLY_MIB_RETALIATION_EVENT
+    description: STR_EARLY_MIB_RETALIATION_EVENT_DESCRIPTION
+    background: MIB_BACKGROUND.SCR
+    timer: 0
+    timerRandom: 0
+    researchList: [STR_CHASING_MIB_PREREQ]
 
   - name: STR_NO_SUPPLY_WARNING_EVENT
     description: STR_NO_SUPPLY_WARNING_EVENT_DESCRIPTION

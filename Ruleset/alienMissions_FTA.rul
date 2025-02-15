@@ -73,10 +73,11 @@ alienMissions:
         objective: true
   - type: STR_CROP_CIRCLES
     refNode: *TerrorLike
+  - type: STR_CATTLE_MUTILATION_EARLY_GAME
+    refNode: *TerrorLike
   - type: STR_ABANDONED_BASE
     refNode: *TerrorLike
-
-  - type: STR_RESISTANCE_HAVEN_DEFENCE
+  - type: STR_RESISTANCE_HAVEN_DEFENSE
     refNode: *TerrorLike
   - type: STR_RESISTANCE_SCIENTIST
     refNode: *TerrorLike
@@ -96,6 +97,8 @@ alienMissions:
     refNode: *TerrorLike
   - type: STR_DESERT_MILITARY_CONVOY
     refNode: *TerrorLike
+  - type: STR_TRAITORS
+    refNode: *TerrorLike
   - type: STR_MIB_HIDEOUT
     refNode: *TerrorLike
     regionWeights:
@@ -112,4 +115,13 @@ alienMissions:
     raceWeights:
       0:
         STR_MIB: 100
-    
+  - type: STR_EARLY_MIB_RETALIATION
+    points: 0
+    objective: 6 #instant retaliation
+    #ignoreBaseDefenses: true #TODO consider
+    spawnUfo: STR_EARLY_MIB_RETALIATION    # this is the UFO that will be spawned
+    waves:
+      - ufo: STR_EARLY_MIB_RETALIATION     # just put something here, doesn't matter
+        count: 1
+        trajectory: P8
+        timer: 3000

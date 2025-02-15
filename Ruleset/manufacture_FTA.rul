@@ -560,7 +560,7 @@ manufacture:
     time: 63000
     cost: 16000
     requiredItems:
-      STR_HIGH_TECH_PARTS: 1
+      STR_HIGH_TECH_PARTS: 4
     producedItems:
       STR_HACKING_COMPUTER: 1
     listOrder: 220040
@@ -941,8 +941,8 @@ manufacture:
       STR_METAL_SCRAPS: 10
     stats:
       processing: 100
-    space: 6
-    time: 48000
+    space: 3
+    time: 38000
     cost: 0
     producedItems:
       STR_SPARE_PARTS: 1

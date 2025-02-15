@@ -878,7 +878,7 @@ regions:
         - [50.31, 79.35, -65, -52.55, -9]
         - [97.10, 130.62, -67.73, -55.1, -9]
         - [272.9, 283.4, -41, -36.35, -9]
-  - type: STR_CROP_CORCLES_INITIAL
+  - type: STR_CROP_CIRCLES_INITIAL
     missionZones:
       -
         - [248.8, 264.37, -44.15, -34.61, -10]
@@ -981,7 +981,6 @@ regions:
         - [236.96, 280, -44.56, -40.5, -15]
         - [356.713, 359.082, -52.165, -53.31, -15]
         - [351.434, 353.075, -52.94, -53.92, -15]
-        - [351.434, 353.075, -52.94, -53.92, -15]
         - [1.35, 7.32, -46.16, -49.45, -15]
         - [36, 43, -48.25, -51, -15]
 
@@ -1041,6 +1040,26 @@ regions:
         - [284, 288, -44, -41, -19]
         - [268, 271, -46, -44, -19]
         - [134, 137, -49, -47, -19]
+
+  - type: STR_CATTLE_MUTILATION_EARLY_GAME #TODO - add more zones!
+    missionZones:
+      -
+        - [248.8, 264.37, -44.15, -34.61, -20]
+        - [268.671, 277.6, -31.86, -37.22, -20]
+        - [237.2, 246.3, -38.9, -48.2, -20]
+        - [251.4, 261.6, -45, -48.07, -20]
+        - [236.96, 280, -44.56, -40.5, -20]
+        - [356.713, 359.082, -52.165, -53.31, -20]
+        - [351.434, 353.075, -52.94, -53.92, -20]
+        - [1.35, 7.32, -46.16, -49.45, -20]
+        - [36, 43, -48.25, -51, -20]
+
+  - type: STR_TRAITORS
+    missionZones:
+      -
+        - [4.26, 17.38, -51.54, -46.4, -21]
+        - [19.61, 31.44, -52.41, -47.8, -21]
+        - [21.1, 35.6, -54.6, -51.8, -21]
 
 globe:
   oceanPalette: 12
@@ -1459,7 +1478,7 @@ globe:
     - id: -15
       deployments:
         STR_CROP_CIRCLES_LOOT: 15
-        STR_CROP_CIRCLE_SAMPLING: 20
+        STR_CROP_CIRCLES_SAMPLES: 20
         STR_CROP_CIRCLE_LOOT_AND_SAMPLING: 10
         STR_CROP_CIRCLES_NO_LOOT: 25
         STR_CROP_CIRCLES_ZOMBIES_NO_LOOT: 15
@@ -1479,6 +1498,13 @@ globe:
       deployments:
         STR_MIB_SMALL_GROUND_CONVOY: 70
         STR_MIB_MEDIUM_GROUND_CONVOY: 30
+    - id: -20
+      deployments:
+        STR_DEAD_CATTLE_MIB: 75
+        STR_FOREST_CATTLE_MIB: 25
+    - id: -21
+      deployments:
+        STR_TRAITORS_REFUGE: 100
 
 #GIS  
   polygons: 

@@ -599,7 +599,7 @@ prisoners:
 
 #Army
   - type: STR_ARMY_FIELD_SOLDIER
-    startingCooperation: -20
+    startingCooperation: -30
     interrogation:
       unlockResearches: [STR_ARMY_FIELD_SOLDIER]
       #requiredResearch: STR_INTEL_STATUS_REPORT
@@ -631,7 +631,7 @@ prisoners:
       funds: -800
       cooperationChange: 5
   - type: STR_ARMY_FIELD_OFFICER
-    startingCooperation: -25
+    startingCooperation: -35
     interrogation:
       unlockResearches: [STR_ARMY_FIELD_OFFICER]
       #requiredResearch: STR_INTEL_STATUS_REPORT
@@ -975,4 +975,66 @@ prisoners:
           STR_RANDOM_TORTURE_EVENT_FUNDS_6: 10
     contain:
       funds: -1000
+      cooperationChange: 5
+
+#Traitors
+  - type: STR_TRAITOR_SOLDIER_MALE
+    startingCooperation: -20
+    interrogation:
+      unlockResearches: [STR_TRAITORS]
+      #requiredResearch: STR_INTEL_STATUS_REPORT
+      diesAfter: false
+      baseResistance: 30
+    recruiting:
+      #requiredResearch: STR_MILITARY_RECRUITING
+      spawnedSoldierRule: STR_RECRUITED_MALE_SOLDIER
+      difficulty: 50
+    torture:
+      difficulty: 50
+      loyaltyChange: 20
+      moraleChange: 30
+      cooperationChange: 50
+      eventChance: 30
+      eventWeights:
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 30
+          STR_RANDOM_TORTURE_EVENT_2: 30
+          STR_RANDOM_TORTURE_EVENT_3: 40
+          STR_RANDOM_TORTURE_EVENT_4: 50
+          STR_RANDOM_TORTURE_EVENT_FUNDS_1: 10
+          STR_RANDOM_TORTURE_EVENT_FUNDS_2: 5
+          STR_RANDOM_TORTURE_EVENT_FUNDS_3: 2
+          STR_RANDOM_TORTURE_EVENT_FUNDS_4: 1
+    contain:
+      funds: -800
+      cooperationChange: 5
+  - type: STR_TRAITOR_SOLDIER_FEMALE
+    startingCooperation: -20
+    interrogation:
+      unlockResearches: [STR_TRAITORS]
+      #requiredResearch: STR_INTEL_STATUS_REPORT
+      diesAfter: false
+      baseResistance: 30
+    recruiting:
+      #requiredResearch: STR_MILITARY_RECRUITING
+      spawnedSoldierRule: STR_RECRUITED_FEMALE_SOLDIER
+      difficulty: 50
+    torture:
+      difficulty: 50
+      loyaltyChange: 20
+      moraleChange: 30
+      cooperationChange: 50
+      eventChance: 30
+      eventWeights:
+        0:
+          STR_RANDOM_TORTURE_EVENT_1: 30
+          STR_RANDOM_TORTURE_EVENT_2: 30
+          STR_RANDOM_TORTURE_EVENT_3: 40
+          STR_RANDOM_TORTURE_EVENT_4: 50
+          STR_RANDOM_TORTURE_EVENT_FUNDS_1: 10
+          STR_RANDOM_TORTURE_EVENT_FUNDS_2: 5
+          STR_RANDOM_TORTURE_EVENT_FUNDS_3: 2
+          STR_RANDOM_TORTURE_EVENT_FUNDS_4: 1
+    contain:
+      funds: -800
       cooperationChange: 5

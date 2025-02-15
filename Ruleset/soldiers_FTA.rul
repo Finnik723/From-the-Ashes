@@ -22,10 +22,10 @@ soldiers:
       - role: 0 #ROLE_SOLDIER
         requirments: 
           1: 10
-          2: 15
-          3: 25
-          4: 50
-          5: 100
+          2: 20
+          3: 40
+          4: 80
+          5: 160
       - role: 1 #ROLE_ROBOT
         requirments: 
           1: 1000000
@@ -36,31 +36,31 @@ soldiers:
       - role: 2 #ROLE_PILOT
         requirments: 
           1: 10
-          2: 15
-          3: 25
-          4: 50
-          5: 100
+          2: 20
+          3: 40
+          4: 80
+          5: 160
       - role: 3 #ROLE_AGENT
         requirments: 
           1: 10
-          2: 15
-          3: 25
-          4: 50
-          5: 100
+          2: 20
+          3: 40
+          4: 80
+          5: 160
       - role: 4 #ROLE_SCIENTIST
         requirments: 
           1: 10
-          2: 15
-          3: 25
-          4: 50
-          5: 100
+          2: 20
+          3: 40
+          4: 80
+          5: 160
       - role: 5 #ROLE_ENGINEER
         requirments: 
           1: 10
-          2: 15
-          3: 25
-          4: 50
-          5: 100
+          2: 20
+          3: 40
+          4: 80
+          5: 160
     roleRankStrings:
       - role: 0 #ROLE_SOLDIER
         strings: 
@@ -949,6 +949,20 @@ soldiers:
   - type: STR_RECRUITED_FEMALE
     refNode: *human
     roles: [-1] #ROLE_NONE
+    requires: [STR_TROLLIUM]
+    costSalary: 4000
+    value: 40
+    femaleFrequency: 100
+  - type: STR_RECRUITED_MALE_SOLDIER
+    refNode: *human
+    roles: [0] #ROLE_SOLDIER
+    requires: [STR_TROLLIUM]
+    costSalary: 4000
+    value: 40
+    femaleFrequency: 0
+  - type: STR_RECRUITED_FEMALE_SOLDIER
+    refNode: *human
+    roles: [0] #ROLE_SOLDIER
     requires: [STR_TROLLIUM]
     costSalary: 4000
     value: 40

@@ -131,134 +131,6 @@ alienDeployments:
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
             - STR_HEAVY_PLASMA_CLIP
-      - alienRank: 4
-        lowQty: 1
-        highQty: 2
-        dQty: 0
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-      - alienRank: 3
-        lowQty: 1
-        highQty: 2
-        dQty: 0
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_SMALL_LAUNCHER
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-            - STR_STUN_BOMB
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-      - alienRank: 2
-        lowQty: 1
-        highQty: 2
-        dQty: 0
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_PLASMA_PISTOL
-            - STR_PLASMA_PISTOL_CLIP
-            - STR_PLASMA_PISTOL_CLIP
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_BLASTER_LAUNCHER
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-      - alienRank: 1
-        lowQty: 1
-        highQty: 3
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_BLASTER_LAUNCHER
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-      - alienRank: 0
-        lowQty: 1
-        highQty: 1
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_BLASTER_LAUNCHER
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-            - STR_BLASTER_BOMB
-      - alienRank: 6
-        lowQty: 0
-        highQty: 2
-        dQty: 1
-        percentageOutsideUfo: 50
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 7
-        lowQty: 0
-        highQty: 2
-        dQty: 1
-        percentageOutsideUfo: 50
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
   - type: STR_INITIAL_BASE_DEFENSE #hardcoded, do not rename!
     race: STR_INITIAL_BASE_DEFENSE_RACE
     width: 40
@@ -4022,7 +3894,7 @@ alienDeployments:
         percentageOutsideUfo: 90
         itemSets: *AnchorEmptyInventory
   - type: STR_FOREST_CATTLE_MIB
-    race: STR_MIB
+    race: STR_MAD_CITIZENS_MIB
     width: 50
     length: 50
     height: 6
@@ -5271,6 +5143,166 @@ alienDeployments:
             - STR_CREDIT_CARD_GOLD
             - STR_BRIEFCASE_CASH
 
+  - type: STR_TRAITORS_REFUGE
+    race: STR_TRAITORS
+    width: 50
+    length: 50
+    height: 8
+    alert: STR_TRAITORS_REFUGE_ALERT
+    alertBackground: BACK02.SCR
+    alertDescription: STR_TRAITORS_REFUGE_ALERT_DESCRIPTION
+    markerName: STR_TRAITORS_REFUGE
+    duration: [40, 50]
+    despawnPenalty: 30
+    abortPenalty: 50
+    customUfo: STR_TRAITORS_REFUGE
+    briefing:
+      textOffset: -16
+      background: BACK02.SCR
+      showTarget: false
+      desc: STR_TRAITORS_REFUGE_BRIEFING
+    data:
+      - alienRank: 5 #STR_TRAITOR_SOLDIER
+        lowQty: 3
+        highQty: 4
+        dQty: 2
+        extraQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_STIMS_INJECTOR
+            - STR_GRENADE
+            - STR_CASH_PACK_BIG
+          -
+            - STR_HEAVY_PISTOL
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_CLIP
+            - STR_HEAVY_PISTOL_EXP_CLIP
+            - STR_STIMS_INJECTOR
+            - STR_GRENADE
+            - STR_PROXIMITY_GRENADE
+            - STR_CASH_PACK
+            - STR_CASH_PACK
+          -
+            - STR_SEMI_AUTO_SHOTGUN
+            - STR_SHOTGUN_SHELLS_AP
+            - STR_SHOTGUN_SHELLS_AP
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BATON
+            - STR_PERSONAL_AID_KIT
+          -
+            - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_STIMS_INJECTOR
+            - STR_CREDIT_CARD
+          -
+            - STR_PRECISION_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_TRAUMA_PACK
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_GRENADE
+            - STR_PERSONAL_AID_KIT
+            - STR_CASH_PACK
+          -
+            - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+            - STR_STIMS_INJECTOR
+            - STR_CASH_PACK
+          -
+            - STR_SNIPER_RIFLE
+            - STR_SNIPER_RIFLE_CLIP
+            - STR_SNIPER_RIFLE_CLIP
+            - STR_SNIPER_RIFLE_CLIP
+            - STR_PERSONAL_AID_KIT
+          -
+            - STR_LMG
+            - STR_LMG_CLIP
+            - STR_LMG_CLIP
+          -
+            - STR_ROCKET_LAUNCHER
+            - STR_SMALL_ROCKET
+            - STR_SMALL_ROCKET
+            - STR_LARGE_ROCKET
+            - STR_INCENDIARY_ROCKET  
+      - alienRank: 6 #STR_BANDIT
+        lowQty: 3
+        medQty: 3
+        highQty: 6
+        dQty: 1
+        percentageOutsideUfo: 80
+        itemSets:
+          -
+            - STR_MACHINE_PISTOL
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_MACHINE_PISTOL_CLIP
+            - STR_CASH_PACK
+          -
+            - STR_SNUBNOSE_PISTOL
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+          -
+            - STR_RIOT_RIFLE
+            - STR_RIOT_RIFLE_CLIP
+            - STR_RIOT_RIFLE_CLIP
+            - STR_CASH_PACK
+          -
+            - STR_LEVER_ACTION_CARBINE
+            - STR_LEVER_ACTION_CARBINE_CLIP
+            - STR_LEVER_ACTION_CARBINE_CLIP
+            - STR_LEVER_ACTION_CARBINE_CLIP
+            - STR_LEVER_ACTION_CARBINE_CLIP
+          -
+            - STR_LEVER_ACTION_CARBINE
+            - STR_LEVER_ACTION_CARBINE_CLIP
+            - STR_LEVER_ACTION_CARBINE_CLIP
+            - STR_LEVER_ACTION_CARBINE_CLIP
+            - STR_LEVER_ACTION_CARBINE_CLIP
+            - STR_CASH_PACK
+          -
+            - STR_RIOT_PISTOL
+            - STR_RIOT_PISTOL_CLIP
+            - STR_RIOT_PISTOL_CLIP
+            - STR_RIOT_PISTOL_CLIP
+            - STR_GRENADE
+            - STR_CASH_PACK
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_PUMP_ACTION_SHOTGUN
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_DRAGON
+            - STR_SHOTGUN_SHELLS_AP  
+
 #traps 
   - type: STR_MIB_CHASING_TRAP
     race: STR_MIB
@@ -5910,6 +5942,82 @@ alienDeployments:
             - STR_RIFLE_CLIP
             - STR_RIFLE_CLIP
             - STR_RIFLE_CLIP
+
+#virtual UFOs - retaliations
+  - type: STR_EARLY_MIB_RETALIATION
+    race: STR_MIB
+    width: 60
+    length: 60
+    height: 6
+    isHidden: true
+    briefing:
+      palette: 0
+      background: BACK01.SCR
+      music: GMENBASE
+      desc: STR_EARLY_MIB_RETALIATION_BRIEFING
+    successEvents:
+      STR_EARLY_MIB_RETALIATION: 100
+    failureEvents:
+      STR_EARLY_MIB_RETALIATION: 100
+    data:
+      - alienRank: 5 #STR_MIB_AGENT
+        lowQty: 3
+        medQty: 2
+        highQty: 0
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: *mibAgentMediumItems
+      - alienRank: 4 #STR_MIB_ARMORED_AGENT
+        lowQty: 2
+        medQty: 3
+        highQty: 6
+        percentageOutsideUfo: 100
+        itemSets: *mibArmoredAgentMediumItems
+      - alienRank: 9 #STR_MIB_SPECOPS
+        lowQty: 2
+        medQty: 3
+        highQty: 5
+        percentageOutsideUfo: 100
+        itemSets:
+          - - STR_LMG
+            - STR_LMG_CLIP
+            - STR_LMG_CLIP
+          - - STR_SMG
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_SMG_CLIP
+            - STR_GRENADE
+          - - STR_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          - - STR_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+          - - STR_ASSAULT_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          - - STR_ASSAULT_RIFLE
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+            - STR_RIFLE_EXP_CLIP
+          - - STR_SNIPER_RIFLE
+            - STR_SNIPER_RIFLE_CLIP
+            - STR_SNIPER_RIFLE_CLIP
+            - STR_SNIPER_RIFLE_CLIP
+          - - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+            - STR_SHOTGUN_SHELLS_BS
+          - - STR_PRECISION_RIFLE
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+            - STR_RIFLE_CLIP
+          - - STR_LIGHT_CANNON
+            - STR_LC_HE_AMMO
+            - STR_LC_I_AMMO
 
   # - type: STR_MIB_CHASING_INTRO
   #   race: STR_MIB

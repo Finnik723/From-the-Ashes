@@ -48,9 +48,9 @@ pilotTacticsZeroPoint: 20
 pilotTacticsRange: 20
 covertOpsExperienceFactor: 20
 covertOpsIntelBonusFactor: 50
-researchTrainingFactor: 10
-engineeringTrainingFactor: 10
-intelTrainingFactor: 60
+researchTrainingFactor: 60
+engineeringTrainingFactor: 60
+intelTrainingFactor: 100
 researchSpeedFactor: 150
 engineeringSpeedFactor: 150
 intelSpeedFactor: 100
@@ -228,6 +228,8 @@ fixedUserOptions:
   battleAutoEnd: false
   fieldPromotions: true
   noAlienPanicMessages: true
+  disableAutoEquip: true
+  oxceManualPromotions: false
 
 recommendedUserOptions:
   playIntro: true

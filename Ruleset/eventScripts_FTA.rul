@@ -302,7 +302,7 @@ eventScripts:
     oneTimeRandomEvents:
       STR_EX_COUNCIL_MEMBER_INITIAL_EVENT: 100
     researchTriggers:
-      STR_COMMUNICATION: true
+      STR_COVERT_OPERATIONS: true
     allowedProcessor: 2 #xcom
   - type: exCouncilMemberInitialMission
     oneTimeRandomEvents:

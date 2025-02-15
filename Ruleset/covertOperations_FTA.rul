@@ -5,7 +5,7 @@ covertOperations:
     categories: [STR_INVESTIGATION]
     allowedRoles: &militaryRoles [0, 3]
     requires:
-      - STR_COVERT_OPERATIONS
+      - STR_CHASING_MIB_PREREQ
     soldiersMin: 2
     soldiersMax: 4
     requiresBaseFunc: [INTEL]
@@ -22,6 +22,8 @@ covertOperations:
       - STR_XCOM_ENGINEER_SUIT_UC
       - STR_XCOM_RESISTANCE_AGENT_SUIT_UC
     #itemSpaceLimit: 10 #FIXME - uncomment after bug fixed
+    successDescription: STR_CHASING_MIB_SUCCESS_DESCRIPTION
+    failureDescription: STR_CHASING_MIB_FAILURE_DESCRIPTION
     instantSuccessDeployment: 
       STR_MIB_CHASING: 100
     instantTrapDeployment: 
@@ -34,7 +36,6 @@ covertOperations:
     allowedRoles: *militaryRoles
     requires:
       - STR_MIB_CHASING_SUCCESS
-      - STR_COVERT_OPERATIONS
     soldiersMin: 3
     soldiersMax: 5
     requiresBaseFunc: [INTEL]

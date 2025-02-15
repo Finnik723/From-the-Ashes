@@ -2922,6 +2922,13 @@ ufopaedia:
       - STR_OFFICE_BOSS_LORE5
     text: STR_OFFICE_BOSS_LORE5_UFOPEDIA
     listOrder: 45000
+  - id: STR_TRAITORS
+    type_id: 8
+    section: STR_ADVERSARY_KNOWLEDGE_UC
+    requires:
+      - STR_TRAITORS
+    text: STR_TRAITORS_UFOPEDIA
+    listOrder: 45220
   - id: STR_CULT_GANGER
     type_id: 8
     section: STR_ADVERSARY_KNOWLEDGE_UC
